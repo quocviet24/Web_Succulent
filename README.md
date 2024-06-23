@@ -78,7 +78,6 @@ Select "Tomcat" and choose the directory where Tomcat is installed (CATALINA_HOM
 1. **Clone the repository**: Open the terminal and run
    ```bash
    git clone https://github.com/quocviet24/Project_Web_Succulent.git
-   cd bookstore-web
    ```
 
 2. **Run the SQL Script**: 
