@@ -1,10 +1,10 @@
 # Web_Succulent
 
-This project is an Ant-based Java web application that allows admins to sell and customers to buy succulents. Users can browse, view details, add to cart, and purchase succulents.
+This project is an Ant-based Java web application that can allow admin can sell and the customer can buy. Users can browse, view details, add to cart, and purchase succulent.
 
 ## Highlight
 
-- **Online Plant Store**: Explore a variety of succulents, manage your cart, search for plants, and complete purchases.
+- **Web bán cây online**: Explore a variety of succulent, manage your cart, search for your tree, and complete purchases.
 - **Comprehensive CRUD Operations**: Efficiently manage users, orders, carts, and products.
 - **Tech Stack**: Servlet, JSP, Bootstrap 5, HTML, CSS, JavaScript, and Microsoft SQL Server.
 
@@ -14,80 +14,81 @@ This project is an Ant-based Java web application that allows admins to sell and
 
 ### Login
 
-![Login Page](./image/login.png)
+![Homepage showcasing ](./image/login.png)
 
-The login page allows guests to join the website.
+Login page allow guest join to website
 
 ### Register
 
-![Register Page](./image/register.png)
+![Homepage showcasing ](./image/register.png)
 
-The register page allows guests to sign up for an account.
+Register page allow guest sign up the account
 
 ### HomePage
 
-![Homepage](./image/homepage.png)
-![Homepage](./image/homepage2.png)
+![Homepage showcasing ](./image/homepage.png)
+![Homepage showcasing ](./image/homepage2.png)
 
-The homepage provides information about the website.
+The homepage features show the information about this website.
 
-### Shopping
+#### View Shopping 
 
 ![Shopping](./image/shopping.png)
 ![Shopping](./image/shopping2.png)
 
-The shopping section shows a list of succulents. Customers can see an overview or detailed view of each plant.
+The shopping show the list of succulent, customer can see overview or see detail 
 
 ### View Album Succulent
 
-![Album](./image/album.png)
-![Album](./image/album2.png)
+![View Album Succulent](./image/album.png)
+![View Album Succulent](./image/album2.png)
 
-Customers can browse a list of succulents.
+Customer can see the list about the succulent
 
 ### View Succulent Detail
+![View Succulent Detail](./image/albumDetail.png)
 
-![Succulent Detail](./image/albumDetail.png)
+Customer can see the detail about the succulent, how to grow, meaning ... 
 
-Customers can view detailed information about succulents, including how to grow them and their meanings.
-
-## Prerequisites
+Make sure you have the following installed:
 
 ### Java Environment
 
-- [Java Development Kit](https://www.oracle.com/java/technologies/downloads) (JDK 17)
-- [Apache Tomcat](https://tomcat.apache.org/download-11.cgi) (Tomcat 11)
-- [Apache Ant](https://ant.apache.org/bindownload.cgi) (Ant 1.10.14)
+- [Java Development Kit](https://www.oracle.com/java/technologies/downloads) (I used JDK 17)
+- [Apache Tomcat](https://tomcat.apache.org/download-11.cgi) (I used Tomcat 11)
+- [Apache Ant](https://ant.apache.org/bindownload.cgi) (I used Ant 1.10.14)
 
 ### Microsoft SQL Server
 
-- [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (SQL Server 2022 Developer)
-- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms) (SSMS 20.1)
+- [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (I used SQL Server 2022 Developer)
+- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms) (I used SSMS 20.1)
 
-*Note: Set the username and password to `sa` and `123` during SSMS setup to match the project's configuration.*
+*Note: When setting up SSMS, set the username and password to `sa` and `123` to match the project's configuration.*
 
 ### Development Environment
 
 - **IDE**: [Visual Studio Code](https://code.visualstudio.com/download)
 - **Extension**: [Community Server Connector](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-community-server-connector) (for connecting to Tomcat)
 
-*Note: To add Tomcat, use the command palette (Ctrl+Shift+P) and type "Servers: Add Local Server." Select "Tomcat" and choose the directory where Tomcat is installed (CATALINA_HOME).*
+*Note: To add Tomcat, use the command palette (Ctrl+Shift+P) and type "Servers: Add Local Server."
+Select "Tomcat" and choose the directory where Tomcat is installed (CATALINA_HOME).*
 
 ## Steps to Run
 
-1. **Clone the Repository**: 
+1. **Clone the repository**: Open the terminal and run
    ```bash
-   git clone https://github.com/ntramanh1204/bookstore-web.git
+   git clone https://github.com/quocviet24/Project_Web_Succulent.git
    cd bookstore-web
    ```
 
 2. **Run the SQL Script**: 
-   Open `Bookabook.sql` in SSMS and execute it to set up the database schema and initial data.
+   Open `Succulent.sql` in SSMS and execute it to set up the database schema and initial data.
 
 3. **Start the Tomcat Server**: 
    In the "SERVERS" view on the left of VS Code, right-click on the Tomcat instance and select "Start."
 
 4. **Build and Deploy the Project**: 
+   Open the terminal in the project directory and run
    ```bash
    ant run
    ```
@@ -95,13 +96,9 @@ Customers can view detailed information about succulents, including how to grow 
 5. **Access the Application**: 
    Open your web browser and navigate to `http://localhost:8080` (or your pre-configured port) to use the application.
 
-## Additional Information
-
-The book data for this project was created using Selenium to crawl book information from Goodreads' best books over the years and inserted into the database. The images of the books are located in `web/images/books`. The Jupyter notebook used for this task is `crawl-best-books-final.ipynb`.
-
 ## License
 
-This project is private and not licensed for public use. All rights are reserved by the project owner.
+This project is currently a private project and is not licensed for public use. All rights are reserved by the project owner.
 
 ## References
 
